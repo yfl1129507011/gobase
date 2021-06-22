@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"gobase/datatype"
+)
 
 func main() {
 	fmt.Println("main")
+	datatype.Testint()
 }

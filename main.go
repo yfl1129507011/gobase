@@ -2,12 +2,14 @@ package main
 
 import (
 	"fmt"
-	"gobase/array"
+	"gobase/slice"
+	// "gobase/array"
 	// "gobase/datatype"
 )
 
 func main() {
 	fmt.Println("main")
 	// datatype.Testint()
-	array.Testtwoarray()
+	// array.Testtwoarray()
+	slice.Testslice9()
 }

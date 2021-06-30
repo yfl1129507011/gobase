@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
-	"gobase/slice"
+	"gobase/function"
+	// "gobase/maplist"
+	//"gobase/slice"
 	// "gobase/array"
 	// "gobase/datatype"
 )
@@ -11,5 +13,7 @@ func main() {
 	fmt.Println("main")
 	// datatype.Testint()
 	// array.Testtwoarray()
-	slice.Testslice9()
+	// slice.Testslice9()
+	// maplist.Testmap6()
+	function.Testdefer()
 }

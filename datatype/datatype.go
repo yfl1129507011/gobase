@@ -60,3 +60,9 @@ func Teststring() {
 }
 
 // 类型转换  int()  float64()
+
+/*
+go语言中类型为nil的几种情况
+1、空指针：var a *int
+2、空列表：var a []int
+*/

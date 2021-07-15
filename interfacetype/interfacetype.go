@@ -137,12 +137,12 @@ func Testreflect() {
 }
 
 type user struct {
-	id   int
-	name string
-	age  int
+	Id   int
+	Name string
+	Age  int
 }
 
-func (u *user) Call() {
+func (u user) Call() {
 	fmt.Printf("%v\n", u)
 }
 
@@ -166,4 +166,21 @@ func getUserFiledAndMethod(input interface{}) {
 	}
 
 	// 通过type 获取里面的方法
+	for i := 0; i < inputType.NumMethod(); i++ {
+		m := inputType.Method(i)
+		fmt.Printf("%s: %v", m.Name, m.Type)
+	}
+}
+
+func Testreflect2() {
+	u := user{111, "dfdfd", 43}
+	getUserFiledAndMethod(u)
+	/*
+		inputType is : user
+		inputValue is: {111 dfdfd 43}
+		Id:int = 111
+		Name:string = dfdfd
+		Age:int = 43
+		Call: func(interfacetype.user)
+	*/
 }

@@ -23,5 +23,5 @@ func main() {
 	// function.Testdefer()
 	// structtype.TestsuperHero()
 	// concurrence.Testdefer()
-	interfacetype.Testreflect()
+	interfacetype.Testreflect2()
 }

@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"gobase/variable"
+	"gobase/interfacetype"
+	// "gobase/variable"
 	// "gobase/concurrence"
 	// "gobase/structtype"
 	// "gobase/function"
@@ -14,12 +15,13 @@ import (
 
 func main() {
 	fmt.Println("main")
-	variable.Testconst()
+	// variable.Testconst()
 	// datatype.Testint()
 	// array.Testtwoarray()
 	// slice.Testslice9()
 	// maplist.Testmap6()
 	// function.Testdefer()
-	// structtype.Teststruct3()
+	// structtype.TestsuperHero()
 	// concurrence.Testdefer()
+	interfacetype.Testreflect()
 }

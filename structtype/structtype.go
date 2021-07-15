@@ -60,3 +60,46 @@ func Teststruct3() {
 	p := newPerson("a", "b", 1)
 	fmt.Printf("%#v\n", p) // &structtype.person{name:"a", city:"b", age:1}
 }
+
+// 定义类和方法
+type Hero struct {
+	Name string
+	ID   int
+}
+
+func newHero(name string, id int) *Hero {
+	return &Hero{
+		Name: name,
+		ID:   id,
+	}
+}
+
+func (h *Hero) Show() {
+	fmt.Printf("%v\n", *h)
+}
+
+func (h *Hero) SetName(name string) {
+	h.Name = name
+}
+
+func Testhero() {
+	h := newHero("fenlon", 925)
+	h.Show() // {fenlon 925}
+	h.SetName("yfl")
+	h.Show() // {yfl 925}
+}
+
+// 对象继承
+type superHero struct {
+	Hero  // 继承了Hero类的方法
+	level int
+}
+
+func TestsuperHero() {
+	var s superHero
+	s.Show() // { 0}
+	s.level = 1
+	s.Name = "abc"
+	s.ID = 100
+	s.Show() // {abc 100}
+}

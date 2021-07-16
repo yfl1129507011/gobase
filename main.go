@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"gobase/interfacetype"
+	"gobase/reflectfunc"
+	// "gobase/interfacetype"
 	// "gobase/variable"
 	// "gobase/concurrence"
 	// "gobase/structtype"
@@ -23,5 +24,6 @@ func main() {
 	// function.Testdefer()
 	// structtype.TestsuperHero()
 	// concurrence.Testdefer()
-	interfacetype.Testreflect2()
+	// interfacetype.Testinterface()
+	reflectfunc.Testreflect4()
 }

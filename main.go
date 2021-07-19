@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"gobase/reflectfunc"
+	// "gobase/reflectfunc"
 	// "gobase/interfacetype"
 	// "gobase/variable"
-	// "gobase/concurrence"
+	"gobase/concurrence"
 	// "gobase/structtype"
 	// "gobase/function"
 	// "gobase/maplist"
@@ -23,7 +23,7 @@ func main() {
 	// maplist.Testmap6()
 	// function.Testdefer()
 	// structtype.TestsuperHero()
-	// concurrence.Testdefer()
+	concurrence.Testchannel4()
 	// interfacetype.Testinterface()
-	reflectfunc.Testreflect4()
+	// reflectfunc.Testreflect4()
 }
